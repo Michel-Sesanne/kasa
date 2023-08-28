@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './navigation.scss';
 
 export default function Navigation() {
   return (
     <nav>
-      <ul>
+      <ul className="navigation">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" activeclassname="active">Accueil</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about" activeclassname="active">A Propos</NavLink>
         </li>
       </ul>
     </nav>
