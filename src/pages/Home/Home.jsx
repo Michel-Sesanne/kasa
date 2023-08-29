@@ -1,11 +1,12 @@
 import React from 'react';
+import Banner from '../../components/Banner/Banner';
+import landscape from '../../assets/image_source_1.jpg';
+import './home.scss';
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-        <h1>Welcome</h1>
+    <div className='home-container'>
+        <Banner bannerImg={landscape} tagline="Chez vous, partout et ailleurs" />
     </div>
   );
 };
-
-export default Home;

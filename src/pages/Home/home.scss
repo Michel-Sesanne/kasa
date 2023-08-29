@@ -1,0 +1,9 @@
+.home-container {
+    margin: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        margin: 27px 20px;
+    }    
+}
