@@ -1,0 +1,19 @@
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    margin-top: 43px;
+    background-color: #F6F6F6;
+    padding: 31px 20px 18px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 991px) {
+    .gallery {
+        background-color: #FFF;
+        justify-content: center;
+        margin-top: 12px;
+        padding: 0;
+    }
+}
