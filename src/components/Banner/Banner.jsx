@@ -10,5 +10,11 @@ export default function Banner({bannerImg, tagline}) {
                 <img src={bannerImg} alt="paysage naturel" />                
             </section>
         )
+    }else{
+        return (
+            <div className='banner'>
+                <img src={bannerImg} alt="paysage naturel" />
+            </div>
+        )
     }
 }
