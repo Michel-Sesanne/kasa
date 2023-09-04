@@ -1,0 +1,47 @@
+.error {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF6060;
+    margin: 139px auto;
+
+    h1 {
+        font-size: 18rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        font-size: 2.25rem;
+        margin: 139px auto;
+        text-align: center;
+    }
+
+    a {
+        color: #FF6060;
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error {
+        margin: 113px auto;
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin: 113px auto;
+        }
+
+        a {
+            font-size: 0.875rem;
+        }
+    }
+}

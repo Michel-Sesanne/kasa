@@ -32,7 +32,11 @@ $red: #FF6060; $gray: #F6F6F6;
         height: 2rem;
         
         &.dropdown-open {
-            transform: translateX(-20%) rotate(-180deg);
+            transform: translateX(-15%) rotate(-180deg);
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }    
 

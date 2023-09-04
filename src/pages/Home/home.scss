@@ -2,6 +2,12 @@
     margin: 50px 100px;
 }
 
+@media screen and (max-width: 1440px) {
+    .home-container {
+        margin: 50px 6.9vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .home-container {
         margin: 27px 20px;
