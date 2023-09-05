@@ -19,9 +19,15 @@ export default function Collapse({ title, content, size }) {
                 <img className={(status === "open" ? "dropdown-open" : "")} src={dropdown} alt='dropdown' />
             </button>
             <div className={`content-wrapper ${status === "open" ? "slide" : ""}`}>
-                <p className='content'>
-                    {content}
-                </p>
+                {Array.isArray(content) ? (     //Gère le cas où le contenu est un tableau(liste)
+                    <ul className='content'>
+                        {content.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p className='content'>{content}</p>
+                )}                
             </div>      
         </article>
     )

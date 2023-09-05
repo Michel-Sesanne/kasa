@@ -1,6 +1,6 @@
 $red: #FF6060; $gray: #F6F6F6;
 
-.dropdown {
+.dropdown { //"Large" par défaut, voir medium et small plus bas
     width: 100%;
     min-width: 335px;
     max-width: 1023px;
@@ -18,28 +18,25 @@ $red: #FF6060; $gray: #F6F6F6;
         border-radius: 5px;
         padding: 10px 20px 10px 15px;
     }
-
     h2 {
         margin: 0;
         color: #FFF;
         font-size: 1.5rem;
         font-weight: 500;
     }
-
     img {                
         transition: transform 0.3s ease;
         width: 2rem;
         height: 2rem;
+        flex-shrink: 0;
         
         &.dropdown-open {
             transform: translateX(-15%) rotate(-180deg);
         }
-
         &:hover {
             cursor: pointer;
         }
     }    
-
     .content-wrapper {
         max-height: 0;
         overflow: hidden;
@@ -54,7 +51,6 @@ $red: #FF6060; $gray: #F6F6F6;
             transition: max-height 0.3s ease-in, transform 0.3s ease-in, opacity 0.3s ease-in;
         }
     }    
-
     .content {
         color: $red;
         margin: 0;
@@ -62,6 +58,7 @@ $red: #FF6060; $gray: #F6F6F6;
         font-size: 1.125rem;
         font-weight: 400;
         line-height: 142.6%;
+        list-style: none;
     }
 }
 
@@ -70,13 +67,23 @@ $red: #FF6060; $gray: #F6F6F6;
         height: 30px;
         padding: 10px 0 10px 10px;
     }
-
     h2 {
         font-size: 0.8125rem;
     }
-
     .content {
         font-size: 12px;
         padding: 13px 20px 19px 20px;
+    }
+}
+
+.dropdown.medium {
+    margin: 0;
+    border-radius: 10px;
+
+    button {
+        padding: 10px 20px 10px 10px;
+    }
+    h2 {
+        font-size: 1.125rem;
     }
 }

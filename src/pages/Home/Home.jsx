@@ -6,7 +6,7 @@ import './home.scss';
 
 export default function Home() {
   return (
-    <div className='home-container'>
+    <div className='home'>
         <Banner bannerImg={landscape} tagline="Chez vous, partout et ailleurs" />
         <Gallery />
     </div>

@@ -1,4 +1,3 @@
-//import React from 'react';
 import useScreenSize from '../../hooks/useScreenSize'
 import logoDekstop from './logoDesktop.svg';
 import logoMobile from './logoMobile.svg';
