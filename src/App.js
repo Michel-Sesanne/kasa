@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Accomodation from './pages/Accomodation/Accomodation'
+import Accommodation from './pages/Accommodation/Accommodation'
 import Error from './pages/Error/Error';
 import { ListeLogementsProvider } from './components/ListeLogements'
 
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/accomodation" element={<Accomodation />} />
+            <Route path="/accommodation/:id" element={<Accommodation />} />
             <Route path="*" element={<Error />} />          
           </Routes>
         </Layout>

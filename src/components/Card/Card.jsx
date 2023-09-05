@@ -3,7 +3,7 @@ import './card.scss'
 
 export default function Card({ id, title, cover }) {
     return (
-        <Link to={'/logement/' + id} key={id} id={id}>
+        <Link to={'/accommodation/' + id} key={id} id={id}>
             <article className="card">
                 <div className='text-overlay'>
                     <h2>{title}</h2>
