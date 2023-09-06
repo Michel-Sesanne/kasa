@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import ListeLogements from '../../components/ListeLogements';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse'
@@ -13,7 +13,7 @@ export default function Accommodation() {
   const logement = logements.find((element) => element.id === id);
 
   if (!logement) {
-    return <div>Chargement...</div>;
+    return <Navigate to="/error" />;
   }  
 
   return (

@@ -1,27 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Accommodation from './pages/Accommodation/Accommodation'
-import Error from './pages/Error/Error';
+import AppRoutes from './routes';
 import { ListeLogementsProvider } from './components/ListeLogements'
 
-function App() {
+export default function App() {
   return (
     <ListeLogementsProvider>
       <Router>
         <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/accommodation/:id" element={<Accommodation />} />
-            <Route path="*" element={<Error />} />          
-          </Routes>
+          <AppRoutes />
         </Layout>
       </Router>
     </ListeLogementsProvider>
   );
 }
-
-export default App;
