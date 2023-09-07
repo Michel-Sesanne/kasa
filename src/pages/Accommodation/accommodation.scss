@@ -1,7 +1,8 @@
-//* {border: 1px solid blue;}
+@import '../../styles/variables';
+
 .accommodation {
-    margin: 50px 100px;
-    color: #FF6060; 
+    margin: 50px 0;
+    color: $main-color; 
 
     .presentation {
         margin: 24px 0;
@@ -34,7 +35,7 @@
                     align-items: center;
                     width: 115px;
                     min-height: 25px;
-                    background-color: #FF6060;
+                    background-color: $main-color;
                     color: #FFF;
                     border-radius: 10px;
                     font-size: 0.875rem;
@@ -67,6 +68,7 @@
             }
             .rating {
                 margin-top: 21px;
+                display: inline-flex;
 
                 img {
                     width: 1.5rem;
@@ -83,12 +85,6 @@
         .collapse {
             width: 47%;
         }
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .accommodation {
-        margin: 50px 6.9vw;
     }
 }
 

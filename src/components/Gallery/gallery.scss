@@ -1,15 +1,41 @@
+@import '../../styles/variables';
+
 .gallery {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: flex-start;
     border-radius: 25px;
     margin-top: 43px;
-    background-color: #F6F6F6;
+    background-color: $bg-color;
     padding: 31px 20px 18px;
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 1241px) and (max-width: 1440px) {
+    .gallery {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% / 3);
+        }
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1240px) {
+    .gallery {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% / 2);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     .gallery {
         background-color: #FFF;
         justify-content: center;

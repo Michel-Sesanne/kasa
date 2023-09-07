@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import useScreenSize from '../../hooks/useScreenSize'
 import logoDekstop from './logoDesktop.svg';
 import logoMobile from './logoMobile.svg';
@@ -9,9 +10,10 @@ export default function Header() {
     
     return (
         <header>
-            <img src={logo} alt="logo Kasa" />
+            <Link to="/">
+                <img src={logo} alt="logo Kasa" />
+            </Link>            
             <Navigation />
         </header>
-    )
-    
+    )    
 }

@@ -1,9 +1,7 @@
-$card-width: calc((100vw - 420px) / 3);
-
 .card {
     position: relative;
-    width: $card-width;
-    height: $card-width;    
+    width: 340px;
+    height: 340px;    
     border-radius: 10px;
     margin: 25px 30px;
 
@@ -38,14 +36,22 @@ $card-width: calc((100vw - 420px) / 3);
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1241px) and (max-width: 1440px) {
     .card {
-        width: 340px;
-        height: 340px;
-    }    
+        width: 100%;
+        min-width: 335px;
+        margin: 25px 2.42vw;      
+    }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 1240px) {
+    .card {
+        width: 100%;
+        margin: 25px 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .card {
         width: 335px;
         height: 255px;

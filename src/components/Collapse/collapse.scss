@@ -1,11 +1,11 @@
-$red: #FF6060; $gray: #F6F6F6;
+@import '../../styles/variables';
 
 .dropdown { //"Large" par défaut, voir medium et small plus bas
     width: 100%;
     min-width: 335px;
     max-width: 1023px;
     margin: 0 auto;
-    background-color: $gray;
+    background-color: $bg-color;
     border-radius: 5px;
 
     button {
@@ -14,7 +14,7 @@ $red: #FF6060; $gray: #F6F6F6;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $red;
+        background-color: $main-color;
         border-radius: 5px;
         padding: 10px 20px 10px 15px;
     }
@@ -52,7 +52,7 @@ $red: #FF6060; $gray: #F6F6F6;
         }
     }    
     .content {
-        color: $red;
+        color: $main-color;
         margin: 0;
         padding: 1.25rem;
         font-size: 1.125rem;

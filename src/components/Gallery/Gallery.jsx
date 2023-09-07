@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import ListeLogements from '../ListeLogements';
+import ListeLogements from '../ListeLogements/ListeLogements';
 import Card from '../Card/Card';
 import './gallery.scss';
 

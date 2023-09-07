@@ -1,10 +1,12 @@
+@import '../../styles/variables';
+
 .navigation {
     display: flex;
     list-style-type: none;
     gap: 57px;
 
     a {
-        color: #FF6060; //Variable à définir plus tard        
+        color: $main-color;       
         font-size: 1.5rem;
         text-decoration: none;
         white-space: nowrap;
@@ -18,6 +20,7 @@
 @media screen and (max-width: 768px) {
     .navigation {
         gap: 26px;
+        
         a {
              font-size: 0.75rem;
         }

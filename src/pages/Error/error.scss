@@ -1,29 +1,46 @@
+@import '../../styles/variables';
+
 .error {
     flex:1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    color: #FF6060;
-    margin: 139px auto;
+    color: $main-color;
+    margin: 139px;
 
     h1 {
         font-size: 18rem;
         font-weight: 700;
+        height: 0.9em;
         margin: 0;
         display: flex;
         align-items: center;
     }
-
     p {
         font-size: 2.25rem;
         margin: 139px auto;
         text-align: center;
     }
-
     a {
-        color: #FF6060;
+        color: $main-color;
         font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1440px) {
+    .error {
+        margin: 70px;
+
+        h1 {
+            font-size: 14rem;
+        }
+        p{
+            font-size: 2rem;
+            margin: 70px auto;
+        }
+        a{
+            font-size: 1rem;
+        }
     }
 }
 
@@ -34,12 +51,10 @@
         h1 {
             font-size: 6rem;
         }
-
         p {
             font-size: 1.125rem;
             margin: 113px auto;
         }
-
         a {
             font-size: 0.875rem;
         }

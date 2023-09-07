@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import ListeLogements from '../../components/ListeLogements';
+import ListeLogements from '../../components/ListeLogements/ListeLogements';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse'
 import starActive from './star_active.svg';
