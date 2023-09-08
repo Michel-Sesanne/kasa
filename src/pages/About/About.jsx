@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-import landscape from '../../assets/image_source_2.jpg';
+import landscape from './image_source_2.jpg';
 import Collapse from '../../components/Collapse/Collapse';
 import './about.scss';
 
