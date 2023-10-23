@@ -6,7 +6,7 @@ export function ListeLogementsProvider({ children }) {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch('/logements.json')
+    fetch('/kasa/logements.json')
       .then(response => response.json())
       .then(data => setLogements(data))
       .catch(error => console.error('Erreur chargement logements:', error));
