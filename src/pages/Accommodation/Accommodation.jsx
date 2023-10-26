@@ -13,7 +13,7 @@ export default function Accommodation() {
   const logement = logements.find((element) => element.id === id);
 
   if (!logement) {
-    return <Navigate to="/error" />;
+    return <Navigate to="/kasa/error" />;
   }  
 
   return (

@@ -10,7 +10,7 @@ export default function Header() {
     
     return (
         <header>
-            <Link to="/">
+            <Link to="/kasa/">
                 <img src={logo} alt="logo Kasa" />
             </Link>            
             <Navigation />

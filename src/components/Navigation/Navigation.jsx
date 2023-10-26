@@ -6,10 +6,10 @@ export default function Navigation() {
     <nav>
       <ul className="navigation">
         <li>
-          <NavLink to="/" activeclassname="active">Accueil</NavLink>
+          <NavLink to="/kasa/" activeclassname="active">Accueil</NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeclassname="active">A Propos</NavLink>
+          <NavLink to="/kasa/about" activeclassname="active">A Propos</NavLink>
         </li>
       </ul>
     </nav>

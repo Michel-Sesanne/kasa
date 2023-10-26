@@ -7,11 +7,10 @@ import Error from './pages/Error/Error';
 export default function AppRoutes() {
     return (
         <Routes>
-           <Route path="/kasa" element={<Home />} />
-           <Route path="/" element={<Home />} />
-           <Route path="/about" element={<About />} />
-           <Route path="/accommodation/:id" element={<Accommodation />} />
-           <Route path="/error" element={<Error />} />
+           <Route path="/kasa/" element={<Home />} />
+           <Route path="/kasa/about" element={<About />} />
+           <Route path="/kasa/accommodation/:id" element={<Accommodation />} />
+           <Route path="/kasa/error" element={<Error />} />
         </Routes>
     )
 }
